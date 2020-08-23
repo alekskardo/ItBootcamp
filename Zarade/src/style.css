@@ -1,0 +1,26 @@
+.deleteBtn {
+  display: none;
+}
+.info {
+  background-color: gray;
+  color: white;
+}
+#pPrihod {
+  background-color: #4abdac;
+}
+#pRashod {
+  background-color: #fc4a1a;
+}
+.pres {
+  background-color: #fc4a1a;
+  color: green;
+}
+.addBPr {
+  background-color: skyblue;
+}
+.addBRa {
+  background-color: lightsalmon;
+}
+input {
+  width: 50%;
+}

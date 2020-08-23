@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budzet</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <div class="info container-fluid">
+          <div class="row">
+            <div class="col-xs-6 col-xs-offset-4">
+              <h2>Dostupan budžet u novembru 2020 :</h2>
+            </div>
+            <div class="col-xs-4 col-xs-offset-5">
+              <h1 id="budzet">-</h1>
+            </div>
+            <div class="col-xs-4 col-xs-offset-5">
+              <div class="row">
+                <div class="col-xs-4">
+                  <p id="pPrihod">Prihod: <span id="prihod"></span></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4">
+                  <p id="pRashod">Rashod: <span id="rashod"></span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-xs-offset-4">
+            <form id="form-filed" class="form-inline">
+              <select id="drop" class="form-control">
+                <option value="-">-</option>
+                <option value="prihodi">Prihodi</option>
+                <option value="rashodi">Rashodi</option>
+              </select>
+              <input
+                type="text"
+                placeholder="Opis"
+                id="desc"
+                class="form-control"
+              />
+              <input
+                type="number"
+                placeholder="Iznos"
+                id="amount"
+                class="form-control"
+              />
+              <button id="btn" class="btn btn-info">Prikazi</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-5 col-xs-offset-1" id="divPrihod">
+            <hr />
+            PRIHODI
+            <div id="prihodi-info"></div>
+          </div>
+          <div class="col-xs-5" id="divRashod">
+            <hr />
+            RASHODI
+            <div id="rashodi-info"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <!-- <script type="module" src="modul1.js"></script> -->
+  </body>
+</html>
